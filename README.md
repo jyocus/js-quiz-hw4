@@ -24,3 +24,6 @@
         // userScore ++/--
 
         //3 events the start event, the question buttons, submit on high
+
+
+How to hide elements - https://www.w3schools.com/css/css_display_visibility.asp
