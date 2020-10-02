@@ -1,9 +1,11 @@
 var startButton = document.getElementById("start-btn");
 var startPageEl = document.querySelector(".container");
-var questionBoxEl = document.getElementById("questions");
+var questionBoxEl = document.getElementById("question-box");
 var timeEL = document.querySelector("#timer");
-var questions = 0 
+
 var secondsLeft = 60
+
+let getQuestion, 
 
 startButton.addEventListener("click", startGame);
 
@@ -12,6 +14,15 @@ function startGame() {
     // console.log("started");
 startPageEl.classList.add("hide");
 questionBoxEl.classList.remove("hide");
+var question = 0
+}
+
+function quiz(question)
+
+function showQuestion () {
+    if()
+}
+    
 }
 
 // function setTime() {
@@ -31,30 +42,27 @@ questionBoxEl.classList.remove("hide");
 var questions = [ {
     question:"What is 1+1",
     choices: [
-        "2",
-        "4",
-        "6",
-        "8"
+        { text: "2", correct: true },
+        { text: "4", correct: false },
+        { text: "6", correct: false },
+        { text: "8", correct: false }
     ],
-    answer:"2"
 },{
     question:"What is 2+2",
     choices: [
-        "2",
-        "4",
-        "6",
-        "8"
+        { text: "2", correct: true },
+        { text: "4", correct: false },
+        { text: "6", correct: false },
+        { text: "8", correct: false }
     ],
-    answer:"2"
 },{
     question:"What is 4+4",
     choices: [
-        "2",
-        "4",
-        "6",
-        "8"
-    ],
-    answer:"2"
+        { text: "2", correct: true },
+        { text: "4", correct: false },
+        { text: "6", correct: false },
+        { text: "8", correct: false }
+    ]
 }
 
 ]
