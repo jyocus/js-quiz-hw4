@@ -1,11 +1,12 @@
 var startButton = document.getElementById("start-btn");
 var startPageEl = document.querySelector(".container");
 var questionBoxEl = document.getElementById("question-box");
-var timeEL = document.querySelector("#timer");
+var questionEL = document.getElementById("question-container");
+// var timeEL = document.querySelector("#timer");
+// var secondsLeft = 60
 
-var secondsLeft = 60
-
-let getQuestion, 
+//let because these will need to be altered later
+let startQuestions, 
 
 startButton.addEventListener("click", startGame);
 
@@ -15,13 +16,14 @@ function startGame() {
 startPageEl.classList.add("hide");
 questionBoxEl.classList.remove("hide");
 var question = 0
+startQuestions()
 }
 
-function quiz(question)
-
-function showQuestion () {
-    if()
+function startQuestions() {
+    emptyBox()
 }
+
+function emptyBox() {
     
 }
 
