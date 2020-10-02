@@ -2,30 +2,35 @@ var startButton = document.getElementById("start-btn");
 var startPageEl = document.querySelector(".container");
 var questionBoxEl = document.getElementById("question-box");
 var questionEL = document.getElementById("question-container");
+var answerButtonEl = document.getElementById("answer-buttons");
 // var timeEL = document.querySelector("#timer");
 // var secondsLeft = 60
 
 //let because these will need to be altered later
-let startQuestions, 
+let randQuestions, questionIndex
 
 startButton.addEventListener("click", startGame);
 
+
 //function to start the game, hide welcome section and show questions
 function startGame() {
-    // console.log("started");
 startPageEl.classList.add("hide");
+randQuestions = questions.sort(() => Math.random() - .5)
+questionIndex = 0
 questionBoxEl.classList.remove("hide");
-var question = 0
 startQuestions()
 }
 
 function startQuestions() {
-    emptyBox()
+    // emptyBox()
+    showNextQuestion(randQuestions[questionIndex]);
 }
-
-function emptyBox() {
+//running text on this ... keeps failing as an unexpected identifier 
+    function showNextQuestion(question)
+    questionEL.innerText = question.question
+// function emptyBox() {
     
-}
+// }
 
 // function setTime() {
 //     var timerInterval = setInterval(function() {
